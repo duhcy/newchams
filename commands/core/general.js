@@ -1,0 +1,32 @@
+const { MessageFlags, ApplicationCommandOptionType } = require('discord.js');
+
+module.exports = {
+    name: 'general',
+    description: "Change the id of general to moderate.",
+    options: [
+        {
+            name: 'channel',
+            description: 'General channelid',
+            type: ApplicationCommandOptionType.Channel,
+            required: true,
+          },
+    ],
+
+    async execute({ client, interaction }) {
+        if(interaction.user.id == client.config.app.DEV || interaction.member.roles.cache.has(client.config.opt.STAFFROLE)){
+            interaction.deferReply({Flags: MessageFlags.Ephemeral});
+            setTimeout(500);
+            try{
+                channelid = interaction.options.get('channel').value;
+                jsonData.Channels.push(channelid);
+                fs.writeFileSync('config.json', JSON.stringify(jsonData));
+                console.log("changed channel");
+                return interaction.editReply({content: "Channel Changed.", Flags: MessageFlags.Ephemeral});
+            }
+            catch(err){
+                console.log(err);
+                return interaction.editReply({content: "Please input valid channel ID", Flags: MessageFlags.Ephemeral});
+            }
+        }
+    }
+};

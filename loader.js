@@ -3,14 +3,9 @@ const { Collection } = require("discord.js");
 client.commands = new Collection();
 const commandsArray = [];
 
-const { Translate, GetTranslationModule } = require("./translate");
-
 const discordEvents = readdirSync("./events/Discord/").filter((file) =>
   file.endsWith(".js")
 );
-
-GetTranslationModule().then(() => {
-  console.log("Translation Module Loaded");
 
   for (const file of discordEvents) {
     const DiscordEvent = require(`./events/Discord/${file}`);
@@ -49,6 +44,5 @@ GetTranslationModule().then(() => {
   });
 
   async function parseLog(txtEvent) {
-    console.log(await Translate(txtEvent, null));
+    console.log(txtEvent, null);
   }
-});
