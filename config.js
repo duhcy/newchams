@@ -1,11 +1,6 @@
 module.exports = {
     app: {
-        token: 'xxx',
         global: true,
-        guild: 'xxx',
-        extraMessages: false,
-        loopMessage: false,
-        lang: 'en',
         dev: "277501067120607232"
     },
 
