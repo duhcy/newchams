@@ -1,4 +1,4 @@
-const { EmbedBuilder, InteractionType } = require('discord.js');
+const { EmbedBuilder, InteractionType, MessageFlags } = require('discord.js');
 
 module.exports = async (client, inter) => {
     //await inter.deferReply({ ephemeral: true });
@@ -14,7 +14,7 @@ module.exports = async (client, inter) => {
             return client.slash.delete(inter.commandName);
         }
         if(inter.guild == null){
-            return;
+            inter.reply({content: "No DMs please", Flags: MessageFlags.Ephemeral})
         }
 
         command.execute({ inter, client });
