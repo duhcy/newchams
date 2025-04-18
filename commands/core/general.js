@@ -12,8 +12,8 @@ module.exports = {
           },
     ],
 
-    async execute({ client, interaction }) {
-        if(interaction.user.id == client.config.app.DEV || interaction.member.roles.cache.has(client.config.opt.STAFFROLE)){
+    async execute({ client, interaction, isStaff }) {
+        if(isStaff){
             interaction.deferReply({ephemeral: true});
             setTimeout(500);
             try{
