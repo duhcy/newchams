@@ -1,5 +1,4 @@
 module.exports = async (client, message) => {
-    console.log(message.content);
     if(message.system || message.author == client.user || message.webhookId != null || message.content == null){
         return;
     }
