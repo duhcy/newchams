@@ -14,7 +14,7 @@ module.exports = async (client, inter) => {
             return client.slash.delete(inter.commandName);
         }
         if(inter.guild == null){
-            inter.reply({content: "No DMs please", Flags: MessageFlags.Ephemeral})
+            return inter.reply({content: "No DMs please", Flags: MessageFlags.Ephemeral});
         }
 
         command.execute({ inter, client });
