@@ -16,7 +16,7 @@ module.exports = async (client, inter) => {
         if(inter.guild == null){
             return inter.reply({content: "No DMs please", ephemeral: true});
         }
-
+        console.log(`${inter.user.username} user /${inter.commandName}`);
         command.execute({ inter, client });
     }
 }
