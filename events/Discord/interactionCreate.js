@@ -13,6 +13,9 @@ module.exports = async (client, inter) => {
             inter.editReply({ embeds: [errorEmbed], ephemeral: true });
             return client.slash.delete(inter.commandName);
         }
+        if(inter.guild == null){
+            return;
+        }
 
         command.execute({ inter, client });
     }
