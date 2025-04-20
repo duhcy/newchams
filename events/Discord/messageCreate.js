@@ -15,6 +15,9 @@ module.exports = async (client, message) => {
             return;
     }
     else if(client.config.opt.Channels.includes(message.channelId) && (message.content.includes("http") || message.content.includes(".gg") || message.content.includes("discordapp") || message.content.includes(".com") || message.attachments.size > 0)){
+        if(message.member.roles.cache.has(client.config.opt.STAFFROLE)){
+            return;
+        }
         await message.delete();
         console.log(`Deleted link in ${message.channel} from ${message.author.username}.`);
         await message.member.timeout(60000);
