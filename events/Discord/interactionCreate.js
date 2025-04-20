@@ -6,13 +6,6 @@ module.exports = async (client, inter) => {
         const Staff = client.config.opt.STAFFROLE;
         const command = client.commands.get(inter.commandName);
 
-        const errorEmbed = new EmbedBuilder().setColor('#ff0000');
-
-        if (!command) {
-            errorEmbed.setDescription('<❌> | Error! Please contact Developers!');
-            inter.editReply({ embeds: [errorEmbed], ephemeral: true });
-            return client.slash.delete(inter.commandName);
-        }
         if(inter.guild == null){
             return inter.reply({content: "No DMs please", ephemeral: true});
         }
