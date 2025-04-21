@@ -137,8 +137,8 @@ module.exports = {
                     }
                 ]
             }
-            await client.channels.cache.get(jsonData.EPVPCHANNEL).messages.fetch()
-                    .then(messages => messages.filter(message => message.author.id === process.env.BOTID).first().edit({ embeds: [newEmbed], content: "" }))
+            await client.channels.cache.get(client.config.opt.EPVPCHANNEL).messages.fetch()
+                    .then(messages => messages.filter(message => message.author.id === client.user.id).first().edit({ embeds: [newEmbed], content: "" }))
                     .catch(console.error);
             await interaction.reply({ content: "updated epvp links", ephemeral: true});    
         }
