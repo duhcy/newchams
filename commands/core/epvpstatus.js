@@ -5,7 +5,7 @@ module.exports = {
     description: "Update Epvpstatus",
 
     async execute({ client, interaction, messageFlag }) {
-        if(interaction.user.id == client.config.app.DEV || interaction.member.roles.cache.has(client.config.opt.STAFFROLE)){
+        if(!messageFlag){
             const newEmbed = {  
                 color: 0x771BCB,
                 title: `EPVP Vouch`,
