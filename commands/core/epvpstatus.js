@@ -119,6 +119,21 @@ module.exports = {
                         value: '[**PUBG Desync**](https://www.elitepvpers.com/forum/playerunknowns-battlegrounds-trading/5285375-pubg-desync-never-detected-built-spoofer-fully-streamproof.html)',
                         name: '\u200b',
                         inline: true,
+                    },
+                    {
+                        value: '[**Delta Force Foah DMA**](https://www.elitepvpers.com/forum/delta-force-hawk-ops-trading/5295274-delta-force-foah-dma-feature-rich-aimbot-esp-misc-clean-esp.html#post40259625)',
+                        name: '\u200b',
+                        inline: true,
+                    },
+                    {
+                        value: '[**DayZ Next Cheat Pro**](https://www.elitepvpers.com/forum/dayz-trading/5295272-dayz-next-cheat-pro-aimbot-esp-misc-anti-cheat-emulator.html#post40259621)',
+                        name: '\u200b',
+                        inline: true,
+                    },
+                    {
+                        value: '\u200b',
+                        name: '\u200b',
+                        inline: true,
                     }
                 ]
             }
