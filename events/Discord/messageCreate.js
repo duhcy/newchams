@@ -15,7 +15,7 @@ module.exports = async (client, message) => {
             return;
     }
     else if(client.config.opt.Channels.includes(message.channelId) && (message.content.includes("http") || message.content.includes(".gg") || message.content.includes("discordapp") || message.content.includes(".com") || message.attachments.size > 0)){
-        if(message.member.roles.cache.has(client.config.opt.STAFFROLE)){
+        if(message.member.roles.cache.has(client.config.opt.STAFFROLE) || message.member.user.id == client.config.app.dev){
             return;
         }
         await message.delete();
