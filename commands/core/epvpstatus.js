@@ -9,7 +9,7 @@ module.exports = {
             const newEmbed = {  
                 color: 0x771BCB,
                 title: `EPVP Vouch`,
-                description: "**Leave a Trade Request on one of our Elitepvpers Posts for a free 5$ Store Credit, After done make a ticket via** <#1304555772952445018>",
+                description: "**Leave a Trade Request on one of our Elitepvpers Posts to enter the EPVP Giveaway, After done make a ticket via** <#1304555772952445018>",
                 fields:[
                     {
                         value: '[**EFT Next Cheat Pro**](https://www.elitepvpers.com/forum/escape-tarkov-trading/5232468-eft-pro-anti-cheat-emulator-drop-your-dogtag-crosshair-tp-bullet-ricochet.html)',
@@ -91,16 +91,6 @@ module.exports = {
                         inline: true,
                     },
                     {
-                        name: '\u200b',
-                        value: '[**Moon Valorant External**](https://www.elitepvpers.com/forum/valorant-trading/5280142-moon-valorant-external-perfect-vischeck-aimbot-trigger-never-detected.html)',
-                        inline: true,
-                    },
-                    {
-                        value: '[**Rust Calamari**](https://www.elitepvpers.com/forum/rust-trading/5171091-rust-calamari-external-full-streamproof-never-detected-feature-rich.html)',
-                        name: '\u200b',
-                        inline: true,
-                    },
-                    {
                         value: '[**Rust Ultimate**](https://www.elitepvpers.com/forum/rust-trading/5110235-rust-ultimate-legit-cheat-streamproof-never-detected.html)',
                         name: '\u200b',
                         inline: true,
@@ -127,11 +117,6 @@ module.exports = {
                     },
                     {
                         value: '[**DayZ Next Cheat Pro**](https://www.elitepvpers.com/forum/dayz-trading/5295272-dayz-next-cheat-pro-aimbot-esp-misc-anti-cheat-emulator.html#post40259621)',
-                        name: '\u200b',
-                        inline: true,
-                    },
-                    {
-                        value: '\u200b',
                         name: '\u200b',
                         inline: true,
                     }
