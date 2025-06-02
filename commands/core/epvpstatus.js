@@ -9,7 +9,7 @@ module.exports = {
             const newEmbed = {  
                 color: 0x771BCB,
                 title: `EPVP Vouch`,
-                description: "**Leave a Trade Request on one of our Elitepvpers Posts to enter the EPVP Vouched Only Giveaway, After done make a ticket via** <#1377753400413782084>",
+                description: `**Leave a Trade Request on one of our Elitepvpers Posts to enter the EPVP Vouched Only Giveaway, After done make a ticket via** <#${client.config.opt.TICKETCHANNEL}>`,
                 fields:[
                     {
                         value: '[**EFT Next Cheat Pro**](https://www.elitepvpers.com/forum/escape-tarkov-trading/5232468-eft-pro-anti-cheat-emulator-drop-your-dogtag-crosshair-tp-bullet-ricochet.html)',
