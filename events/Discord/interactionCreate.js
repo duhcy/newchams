@@ -11,7 +11,7 @@ module.exports = async (client, inter) => {
         }
         console.log(`${inter.user.username} user /${inter.commandName}`);
         let ephemeralStatus = true;
-        if(inter.member.user.id == client.config.app.DEV || inter.member.roles.cache.has(Staff)){
+        if(inter.member.roles.cache.has(Staff)){
             ephemeralStatus = false;
         }
         command.execute({ inter, client, ephemeralStatus });
