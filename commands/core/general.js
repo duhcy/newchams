@@ -12,8 +12,8 @@ module.exports = {
           },
     ],
 
-    async execute({ client, inter, isStaff }) {
-        if(isStaff){
+    async execute({ client, inter, ephemeralStatus }) {
+        if(!ephemeralStatus){
             inter.deferReply({ephemeral: true});
             setTimeout(500);
             try{

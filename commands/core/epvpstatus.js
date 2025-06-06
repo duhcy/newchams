@@ -4,8 +4,8 @@ module.exports = {
     name: 'epvpstatus',
     description: "Update Epvpstatus",
 
-    async execute({ client, inter, messageFlag }) {
-        if(!messageFlag){
+    async execute({ client, inter, ephemeralStatus }) {
+        if(!ephemeralStatus){
             const newEmbed = {  
                 color: 0x771BCB,
                 title: `EPVP Vouch`,
