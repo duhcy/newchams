@@ -6,7 +6,7 @@ module.exports = {
 
     async execute({ client, inter, ephemeralStatus }) {
         const embed = new EmbedBuilder()
-            .setColor(0x00AE86)
+            .setColor(0x771BCB)
             .setTitle('🛒 How to Send an EPVP Trade')
             .setDescription('Please follow these steps carefully to complete your trade and show support:')
             .addFields(

@@ -6,7 +6,7 @@ module.exports = {
 
     async execute({ client, inter, ephemeralStatus }) {
         const embed = new EmbedBuilder()
-            .setColor('#5865F2') // Discord blurple
+            .setColor(0x771BCB) // Discord blurple
             .setTitle('🔧 All-In-One Tool for DMA Cards')
             .setDescription('A powerful utility that helps you manage and diagnose your DMA card with ease.')
             .addFields(
