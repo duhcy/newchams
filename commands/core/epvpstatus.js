@@ -77,7 +77,7 @@ module.exports = {
                 }
             };
             await client.channels.cache.get(client.config.opt.EPVPCHANNEL).messages.fetch()
-                    .then(messages => messages.filter(message => message.author.id === client.user.id).first().edit({ embeds: [newEmbed], content: "" }))
+                    .then(messages => messages.filter(message => message.author.id === client.user.id).first().edit({ embeds: [embed], content: "" }))
                     .catch(console.error);
             await inter.reply({ content: "updated epvp links", ephemeral: true});    
         }
