@@ -6,7 +6,7 @@ module.exports = {
 
     async execute({ client, inter, ephemeralStatus }) {
         const coreIsolationEmbed = new EmbedBuilder()
-  .setColor(0x2f3136) // Dark gray color
+  .setColor(0x771BCB) // Dark gray color
   .setTitle('🛡️ How to Disable Core Isolation (Memory Integrity) in Windows')
   .setDescription('Follow these steps carefully to disable Memory Integrity:')
   .addFields(
