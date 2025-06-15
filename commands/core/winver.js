@@ -1,4 +1,4 @@
-const { MessageFlags } = require('discord.js');
+const { MessageFlags, EmbedBuilder, AttachmentBuilder } = require('discord.js');
 
 module.exports = {
     name: 'winver',
