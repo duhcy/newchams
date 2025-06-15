@@ -6,7 +6,7 @@ module.exports = {
 
     async execute({ client, inter, ephemeralStatus }) {
         const winverEmbed = new EmbedBuilder()
-  .setColor(0x1e90ff) // Windows blue
+  .setColor(0x771BCB) // Windows blue
   .setTitle('🪟 How to Check Your Windows Version (winver)')
   .setDescription('Follow these steps to find out your current Windows version:')
   .addFields(
