@@ -29,6 +29,6 @@ module.exports = {
   )
   .setImage('attachment://winver.png')
   .setFooter({ text: 'Tip: This is useful when checking compatibility or troubleshooting.' });
-        inter.reply({embeds: [winverEmbed],, files: [{ attachment: "winver.png" }], ephemeral: ephemeralStatus});
+        inter.reply({embeds: [winverEmbed], files: [{ attachment: "winver.png" }], ephemeral: ephemeralStatus});
     }
 }
