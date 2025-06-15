@@ -5,6 +5,30 @@ module.exports = {
     description: "Instructions to find your Windows version.",
 
     async execute({ client, inter, ephemeralStatus }) {
-        inter.reply({content: 'Open the Search Bar:\n\nClick on the Search icon in the taskbar (usually a magnifying glass).\nAlternatively, press the Windows key on your keyboard to bring up the search.\nType "winver":\n\nIn the search bar, type winver (without quotes).\nSelect the Result:\n\nYou should see an app or command called winver appear in the search results. Click on it.\nView the Windows Version:\n\nA window will pop up displaying your Windows version and build number.', files: [{ attachment: "winver.png" }], ephemeral: ephemeralStatus});
+        const winverEmbed = new EmbedBuilder()
+  .setColor(0x1e90ff) // Windows blue
+  .setTitle('🪟 How to Check Your Windows Version (winver)')
+  .setDescription('Follow these steps to find out your current Windows version:')
+  .addFields(
+    {
+      name: '🔍 1. Open the Search Bar',
+      value: 'Click the **Search icon** in the taskbar (magnifying glass),\nor press the **Windows key** to open the search menu.',
+    },
+    {
+      name: '⌨️ 2. Type "winver"',
+      value: 'Type `winver` (without quotes) in the search bar.',
+    },
+    {
+      name: '📄 3. Select the Result',
+      value: 'Click the **winver** app or command from the search results.',
+    },
+    {
+      name: '🪟 4. View Windows Version',
+      value: 'A window will appear showing your **Windows version** and **build number**.',
+    }
+  )
+  .setImage('attachment://winver.png')
+  .setFooter({ text: 'Tip: This is useful when checking compatibility or troubleshooting.' });
+        inter.reply({embeds: [winverEmbed],, files: [{ attachment: "winver.png" }], ephemeral: ephemeralStatus});
     }
 }
