@@ -15,7 +15,7 @@ module.exports = {
     async execute({ client, inter, ephemeralStatus }) {
         const amount = inter.options.getNumber('amount');
 
-        const isDev = inter.user.id === client.config.app.DEV;
+        const isDev = inter.user.id == client.config.app.DEV;
         const isStaff = inter.member.roles.cache.has(client.config.opt.STAFFROLE);
 
         if (!isDev && !isStaff) {
