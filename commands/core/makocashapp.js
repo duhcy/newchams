@@ -29,12 +29,11 @@ module.exports = {
 }
 
             const embed = new EmbedBuilder()
-                .setColor(0x00C244) // Cash App green
+                .setColor(0x771BCB) // Cash App green
                 .setTitle('💸 Send Money via Cash App')
                 .setDescription(`Please send funds to **[${cashAppTag}](${cashAppUrl})**.`)
                 .setThumbnail('https://upload.wikimedia.org/wikipedia/commons/3/39/Cash_App_Logo.svg') // Optional: Cash App logo
                 .addFields(...fields)
-                .setFooter({ text: 'Thank you for supporting Mako ❤️', iconURL: inter.user.displayAvatarURL() })
                 .setTimestamp();
                 return inter.reply({ embeds: [embed], ephemeral: false });
         }
