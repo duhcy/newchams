@@ -13,7 +13,13 @@ module.exports = {
             ],
 
     async execute({ client, inter, ephemeralStatus }) {
-        const amount = inter.options.getNumber('amount');
+        amount = null;
+        try{
+            amount = inter.options.getNumber('amount');
+        }
+        catch{
+            console.log("No value for makoca");
+        }
 
         if((inter.user.id == client.config.app.dev) || (inter.member.roles.cache.has(client.config.opt.STAFFROLE))){
             const cashAppTag = '$PopMako14';
