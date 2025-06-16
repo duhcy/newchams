@@ -13,7 +13,6 @@ module.exports = {
             ],
 
     async execute({ client, inter, ephemeralStatus }) {
-        const client = interaction.client;
         const amount = interaction.options.getNumber('amount');
 
         const isDev = interaction.user.id === client.config.app.DEV;
