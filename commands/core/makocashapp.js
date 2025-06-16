@@ -13,13 +13,13 @@ module.exports = {
             ],
 
     async execute({ client, inter, ephemeralStatus }) {
-        const amount = interaction.options.getNumber('amount');
+        const amount = inter.options.getNumber('amount');
 
-        const isDev = interaction.user.id === client.config.app.DEV;
-        const isStaff = interaction.member.roles.cache.has(client.config.opt.STAFFROLE);
+        const isDev = inter.user.id === client.config.app.DEV;
+        const isStaff = inter.member.roles.cache.has(client.config.opt.STAFFROLE);
 
         if (!isDev && !isStaff) {
-            return interaction.reply({ content: "❌ You don't have permission to use this command.", ephemeral: true });
+            return inter.reply({ content: "❌ You don't have permission to use this command.", ephemeral: true });
         }
 
         const cashAppTag = '$PopMako14';
@@ -37,8 +37,8 @@ module.exports = {
                     inline: true
                 } : {}
             )
-            .setFooter({ text: 'Thank you for supporting Mako ❤️', iconURL: interaction.user.displayAvatarURL() })
+            .setFooter({ text: 'Thank you for supporting Mako ❤️', iconURL: inter.user.displayAvatarURL() })
             .setTimestamp();
-            return interaction.reply({ embeds: [embed], ephemeral: false });
+            return inter.reply({ embeds: [embed], ephemeral: false });
     }
 }
