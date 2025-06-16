@@ -14,8 +14,8 @@ module.exports = {
 
     async execute({ client, inter, ephemeralStatus }) {
         const amount = inter.options.getNumber('amount');
-        
-        if(!inter.member.user.id == client.config.app.DEV || !inter.member.roles.cache.has(client.config.opt.STAFFROLE)){
+
+        if(!(inter.member.user.id == client.config.app.DEV) || !(inter.member.roles.cache.has(client.config.opt.STAFFROLE))){
             return inter.reply({ content: "❌ You don't have permission to use this command.", ephemeral: true });
         }
 
