@@ -1,4 +1,4 @@
-const { MessageFlags, ApplicationCommandOptionType } = require('discord.js');
+const { MessageFlags, ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 
 module.exports = {
     name: 'makocashapp',
