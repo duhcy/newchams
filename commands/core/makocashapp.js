@@ -7,8 +7,8 @@ module.exports = {
             {
                 name: 'amount',
                 description: 'Amount To Send, Leave Blank if Unsure',
-                type: ApplicationCommandOptionType.Channel,
-                required: true,
+                type: ApplicationCommandOptionType.Number,
+                required: false,
               },
             ],
 
