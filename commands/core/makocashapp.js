@@ -21,6 +21,7 @@ module.exports = {
             const fields = [];
 
             if (amount !== null) {
+                console.log(amount.toFixed(2));
                 fields.push({
                     name: '💰 Requested Amount',
                     value: `\`$${amount.toFixed(2)}\``,
