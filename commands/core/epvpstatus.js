@@ -40,7 +40,8 @@ module.exports = {
                         value: [
                             '[**R6 Ring-1 Lite**](https://www.elitepvpers.com/forum/rainbow-six-siege-trading/5216120-r6-lite-most-undetected-r6-cheat-clean-esp-built-spoofer.html)',
                             '[**R6 Crusader**](https://www.elitepvpers.com/forum/rainbow-six-siege-trading/5217128-r6-crusader-legit-cheat-intel-amd-support-undetected.html)',
-                            '[**R6 DMA**](https://www.elitepvpers.com/forum/rainbow-six-siege-trading/5294299-r6-dma-aimbot-esp-misc-auto-qb-updates.html#post40255381)'
+                            '[**R6 DMA**](https://www.elitepvpers.com/forum/rainbow-six-siege-trading/5294299-r6-dma-aimbot-esp-misc-auto-qb-updates.html#post40255381)',
+                            '[**R6 Unlock All**](https://www.elitepvpers.com/forum/rainbow-six-siege-trading/5304838-r6-unlock-all-clean-esp-server-side-unlock-all-fully-external.html#post40306053)'
                         ].join('\n'),
                         inline: true
                     },
