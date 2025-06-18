@@ -26,6 +26,8 @@ module.exports = async (client, message) => {
             await client.channels.cache.get(client.config.opt.OUTPUT).send(`Deleted link in ${message.channel} from ${message.member} (${message.author.username}). Content: ${message.content}`);
         }
         catch{
+            await client.channels.cache.get(client.config.opt.LOGCHANNEL).send(`Deleted link in ${message.channel} from ${message.member} (${message.author.username}). Message is too long to display.`);
+            await client.channels.cache.get(client.config.opt.OUTPUT).send(`Deleted link in ${message.channel} from ${message.member} (${message.author.username}). Message is too long to display.`);
             console.log("Cant display deleted link content");
         }
         return;
