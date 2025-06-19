@@ -28,7 +28,6 @@ module.exports = {
                     {
                         name: '☣️ Rust',
                         value: [
-                            '[**Rust Matrix**](https://www.elitepvpers.com/forum/rust-trading/5273614-rust-matrix-feature-rich-undetected-instant-delivery.html#post40169249)',
                             '[**Rust Disconnect**](https://www.elitepvpers.com/forum/rust-trading/5222385-rust-disconnect-streamproof-undetected-instant-delivery.html)',
                             '[**Rust Ultimate**](https://www.elitepvpers.com/forum/rust-trading/5110235-rust-ultimate-legit-cheat-streamproof-never-detected.html)',
                             '[**Rust DMA**](https://www.elitepvpers.com/forum/rust-trading/5274504-rust-dma-aimbot-esp-misc-skinchanger.html)'
