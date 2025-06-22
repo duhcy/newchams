@@ -14,7 +14,7 @@ module.exports = {
                 { name: '💾 Flash Firmware', value: 'Flash or update firmware directly through the tool.' },
                 { name: '⚡ Speedtest', value: 'Benchmark the speed of your DMA card to ensure optimal performance.' }
             )
-            .setURL('https://github.com/kilmu1337/DMA-Tool/releases/')
+            .setURL('https://github.com/kilmu1337/DMA-Tool/releases/download/v1.1.3/Kilmu.DMA.Tool.1.1.3.exe')
             .setFooter({ text: 'Click the title or use the link above to get started!' })
             .setTimestamp();
         inter.reply({embeds: [embed], ephemeral: ephemeralStatus});
