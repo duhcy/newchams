@@ -1,6 +1,5 @@
 module.exports = async (client, message) => {
     nonc = Date.now().toString();
-    console.log(`nonce: ${nonc}`);
     if(message.system || message.author == client.user || message.webhookId != null || message.content == null){
         return;
     }
