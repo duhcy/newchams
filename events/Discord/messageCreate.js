@@ -1,16 +1,18 @@
 module.exports = async (client, message) => {
+    nonc = Date.now().toString();
+    console.log(`nonce: ${nonc}`);
     if(message.system || message.author == client.user || message.webhookId != null || message.content == null){
         return;
     }
     else if(message.channelId == client.config.opt.ANNOUNCEINPUTCHANNEL){
         console.log("Message in Annoucement Channel");
-            await client.channels.cache.get(client.config.opt.ANNOUCEMENTCHANNEL).send({content: message.content ,files: attachmentCollectionToArray(message.attachments)});
+            await client.channels.cache.get(client.config.opt.ANNOUCEMENTCHANNEL).send({content: message.content ,files: attachmentCollectionToArray(message.attachments), nonce: nonc, enforceNonce: true});
             console.log("They have perms sending message with image");
             return;
     }
     else if(message.channelId == client.config.opt.UPDATEINPUTCHANNEL){
         console.log("Message in Updates Channel");
-            await client.channels.cache.get(client.config.opt.UPDATECHANNEL).send({content: message.content ,files: attachmentCollectionToArray(message.attachments)});
+            await client.channels.cache.get(client.config.opt.UPDATECHANNEL).send({content: message.content ,files: attachmentCollectionToArray(message.attachments), nonce: nonc, enforceNonce: true});
             console.log("They have perms sending message with image");
             return;
     }
