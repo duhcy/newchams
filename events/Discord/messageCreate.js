@@ -1,5 +1,5 @@
 module.exports = async (client, message) => {
-    nonc = generateRandomString();
+    nonc = Date.now().toString();
     console.log(`nonce: ${nonc}`);
     if(message.system || message.author == client.user || message.webhookId != null || message.content == null){
         return;
@@ -45,12 +45,3 @@ function attachmentCollectionToArray(attachmentCollection) {
   
     return attachmentArray;
   }
-
-  function generateRandomString(length = 15) {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  let result = '';
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return result;
-}
