@@ -41,7 +41,7 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
       try {
         console.log('Registering slash commands...');
 
-        await rest.put(Routes.applicationCommands(process.env.BOTID), {body: commands}); //Bot ID
+        await rest.put(Routes.applicationCommands(process.env.BOTID), {body: commandsArray}); //Bot ID
 
         console.log('Slash commands were registered successfully!');
       } catch (error) {
