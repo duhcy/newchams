@@ -1,5 +1,5 @@
 const { readdirSync } = require("fs");
-const { Collection } = require("discord.js");
+const { Collection, REST, Routes } = require("discord.js");
 client.commands = new Collection();
 const commandsArray = [];
 
@@ -35,12 +35,19 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
   });
 
   client.on("ready", (client) => {
-    if (client.config.app.global)
-      client.application.commands.set(commandsArray);
-    else
-      client.guilds.cache
-        .get(client.config.app.guild)
-        .commands.set(commandsArray);
+    const rest = new REST({ version: '10' }).setToken(process.env.KEY);
+
+    (async () => {
+      try {
+        console.log('Registering slash commands...');
+
+        await rest.put(Routes.applicationCommands(process.env.BOTID), {body: commands}); //Bot ID
+
+        console.log('Slash commands were registered successfully!');
+      } catch (error) {
+        console.log(`There was an error: ${error}`);
+      }
+    })();
   });
 
   async function parseLog(txtEvent) {
