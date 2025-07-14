@@ -34,9 +34,9 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
     }
   });
 
-  client.on("ready", (client) => {
+  client.on("ready", async (client) => {
     if (client.config.app.global)
-      client.application.commands.set(commandsArray);
+      await client.application.commands.set(commandsArray);
     else
       client.guilds.cache
         .get(client.config.app.guild)
