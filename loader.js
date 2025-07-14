@@ -42,7 +42,7 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
         .get(client.config.app.guild)
         .commands.set(commandsArray);
 
-    console.log(client.application.commads.get());
+    console.log(commandsArray);
   });
 
   async function parseLog(txtEvent) {
