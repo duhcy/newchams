@@ -35,12 +35,9 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
   });
 
   client.on("ready", async (client) => {
-    if (client.config.app.global)
-      await client.application.commands.set(commandsArray);
-    else
-      client.guilds.cache
-        .get(client.config.app.guild)
-        .commands.set(commandsArray);
+    await client.application.fetch();
+    await client.application.commands.set(commandsArray);
+    console.log("Slash commands registered.");
 
     console.log(commandsArray);
   });
