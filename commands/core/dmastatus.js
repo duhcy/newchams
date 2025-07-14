@@ -1,7 +1,7 @@
 const { MessageFlags, EmbedBuilder } = require('discord.js');
 
 module.exports = {
-    name: 'dmaembed',
+    name: 'dmastatus',
     description: "Update dma channel",
 
     async execute({ client, inter, ephemeralStatus }) {
