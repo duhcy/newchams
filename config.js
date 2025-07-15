@@ -5,11 +5,7 @@ module.exports = {
     },
 
     opt: {
-        Staff: {
-            enabled: false,
-            roleName: 'Staff',
-            commands: []
-        },
+        GUILDID: "1377753400023974090",
         Channels: [
             "1377753400690741285",
             "1377753400690741286",

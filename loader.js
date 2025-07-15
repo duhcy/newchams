@@ -35,7 +35,7 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
   });
 
   client.on("ready", async (client) => {
-  const guild = client.guilds.cache.get("1377753400023974090");
+  const guild = client.guilds.cache.get(client.config.opt.GUILDID);
   if (!guild) return console.log("Guild not found.");
 
   await guild.commands.set(commandsArray); // Fast update for testing
