@@ -41,7 +41,7 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
   await guild.commands.set(commandsArray); // Fast update for testing
   console.log("Guild slash commands registered.");
 
-    console.log(commandsArray);
+    //console.log(commandsArray);
   });
 
   async function parseLog(txtEvent) {
