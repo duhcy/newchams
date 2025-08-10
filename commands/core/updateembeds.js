@@ -68,7 +68,7 @@ module.exports = {
                             '[**Delta Force Foah DMA**](https://www.elitepvpers.com/forum/delta-force-hawk-ops-trading/5295274-delta-force-foah-dma-feature-rich-aimbot-esp-misc-clean-esp.html#post40259625)',
                             '[**DayZ Next Cheat Pro**](https://www.elitepvpers.com/forum/dayz-trading/5295272-dayz-next-cheat-pro-aimbot-esp-misc-anti-cheat-emulator.html#post40259621)',
                             '[**Apex Playground DMA**](https://www.elitepvpers.com/forum/apex-legends-trading/5259210-apex-playground-dma-perfect-triggerbot-aimbot-esp-misc.html)',
-                            '[**EVO DMA (Valorant)**](https://www.elitepvpers.com/forum/valorant-trading/5273111-evo-valorant-dma-perfect-vischeck-magdet-trigger-no-memory-shellcode.html#post40167036)',
+                            '[**RKX Valorant DMA**](https://www.elitepvpers.com/forum/valorant-trading/5273111-rkx-valorant-dma-perfect-vischeck-lineup-helper-no-memory-shellcode.html#post40167036)',
                             '[**Novex Perm Spoofer**](https://www.elitepvpers.com/forum/valorant-trading/5308509-novex-perm-spoofer-tpm-supported-arp-mac-address-supports-all-motherboards.html)'
                         ].join('\n'),
                         inline: true
