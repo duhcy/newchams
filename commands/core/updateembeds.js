@@ -75,7 +75,7 @@ module.exports = {
                     }
                 ],
                 footer: {
-                    text: 'Elitepvpers Vouch System - Verified and Trusted Vendors Only'
+                    text: 'Elitepvpers Vouch System - Chams Services'
                 }
             };
             await client.channels.cache.get(client.config.opt.EPVPCHANNEL).messages.fetch()
