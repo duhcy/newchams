@@ -30,7 +30,6 @@ module.exports = {
                         value: [
                             '[**Rust Disconnect**](https://www.elitepvpers.com/forum/rust-trading/5222385-rust-disconnect-streamproof-undetected-instant-delivery.html)',
                             '[**Rust Ultimate**](https://www.elitepvpers.com/forum/rust-trading/5110235-rust-ultimate-legit-cheat-streamproof-never-detected.html)',
-                            '[**Rust Volk DMA**](https://www.elitepvpers.com/forum/rust-trading/5274504-rust-dma-aimbot-esp-misc-skinchanger.html)',
                             '[**Rust Blurred DMA**](https://www.elitepvpers.com/forum/rust-trading/5308513-blurred-gg-rust-dma-no-shellcode-memory-auto-updater.html#post40324036)'
                         ].join('\n'),
                         inline: true
@@ -56,8 +55,7 @@ module.exports = {
                     {
                         name: '🦸 Marvel Rivals',
                         value: [
-                            '[**Marvel Rivals DMA**](https://www.elitepvpers.com/forum/marvel-rivals-trading/5277985-marvel-rivals-dma-fully-streamproof-raytracing-vischeck-no-memory-shellcode.html#post40187203)',
-                            '[**Marvel Rivals External**](https://www.elitepvpers.com/forum/marvel-rivals-trading/5277986-marvel-rivals-klar-silent-aim-built-spoofer-never-detected.html#post40187210)'
+                            '[**Marvel Rivals DMA**](https://www.elitepvpers.com/forum/marvel-rivals-trading/5277985-marvel-rivals-dma-fully-streamproof-raytracing-vischeck-no-memory-shellcode.html#post40187203)'
                         ].join('\n'),
                         inline: true
                     },
