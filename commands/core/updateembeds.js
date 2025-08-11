@@ -53,6 +53,13 @@ module.exports = {
                         inline: true
                     },
                     {
+                        name: '🦸 Marvel Rivals',
+                        value: [
+                            '[**Marvel Rivals DMA**](https://www.elitepvpers.com/forum/marvel-rivals-trading/5277985-marvel-rivals-dma-fully-streamproof-raytracing-vischeck-no-memory-shellcode.html#post40187203)'
+                        ].join('\n'),
+                        inline: true
+                    },
+                    {
                         name: '🎮 Other Games',
                         value: [
                             '[**PUBG Desync**](https://www.elitepvpers.com/forum/playerunknowns-battlegrounds-trading/5285375-pubg-desync-never-detected-built-spoofer-fully-streamproof.html)',
@@ -60,8 +67,7 @@ module.exports = {
                             '[**DayZ Next Cheat Pro**](https://www.elitepvpers.com/forum/dayz-trading/5295272-dayz-next-cheat-pro-aimbot-esp-misc-anti-cheat-emulator.html#post40259621)',
                             '[**Apex Playground DMA**](https://www.elitepvpers.com/forum/apex-legends-trading/5259210-apex-playground-dma-perfect-triggerbot-aimbot-esp-misc.html)',
                             '[**RKX Valorant DMA**](https://www.elitepvpers.com/forum/valorant-trading/5273111-rkx-valorant-dma-perfect-vischeck-lineup-helper-no-memory-shellcode.html#post40167036)',
-                            '[**Novex Perm Spoofer**](https://www.elitepvpers.com/forum/valorant-trading/5308509-novex-perm-spoofer-tpm-supported-arp-mac-address-supports-all-motherboards.html)',
-                            '[**Marvel Rivals DMA**](https://www.elitepvpers.com/forum/marvel-rivals-trading/5277985-marvel-rivals-dma-fully-streamproof-raytracing-vischeck-no-memory-shellcode.html#post40187203)'
+                            '[**Novex Perm Spoofer**](https://www.elitepvpers.com/forum/valorant-trading/5308509-novex-perm-spoofer-tpm-supported-arp-mac-address-supports-all-motherboards.html)'
                         ].join('\n'),
                         inline: true
                     }
