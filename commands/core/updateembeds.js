@@ -55,7 +55,7 @@ module.exports = {
                     {
                         name: '🦸 Marvel Rivals',
                         value: [
-                            '[**Marvel Rivals DMA**](https://www.elitepvpers.com/forum/marvel-rivals-trading/5277985-marvel-rivals-dma-fully-streamproof-raytracing-vischeck-no-memory-shellcode.html#post40187203)'
+                            '[**Marvel Rivals DMA**](https://www.elitepvpers.com/forum/marvel-rivals-trading/5277985-marvel-rivals-dma-fully-streamproof-raytracing-vischeck-no-memory-shellcode.html#post40187203)'w
                         ].join('\n'),
                         inline: true
                     },
