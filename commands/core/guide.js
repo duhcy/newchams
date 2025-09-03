@@ -5,7 +5,7 @@ const path = require('path');
 filePath = path.join(__dirname, '../../Guides.txt');
 const rawTxt = fs.readFileSync(filePath, 'utf-8');
 const products = {};
-const regex = /-(^\(]+)\(([^)]+)\)/g;
+const regex = /-([^\(]+)\(([^)]+)\)/g;
 let match;
 while((match = regex.exec(rawTxt)) !== null){
   const name = match[1].trim();
