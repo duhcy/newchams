@@ -16,4 +16,13 @@ module.exports = async (client, inter) => {
         }
         command.execute({ inter, client, ephemeralStatus });
     }
+    if(inter.type === InteractionType.ApplicationCommandAutocomplete) {
+        const command = client.commands.get(inter.commandName);
+        if(!command || !command.autocomplete) return;
+        try{
+            await command.autocomplete(inter);
+        } catch(error) {
+            console.error(error);
+        }
+    }
 }
