@@ -2,7 +2,7 @@ const { MessageFlags } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
 
-filePath = path.join(__, '../Guides.txt');
+filePath = path.join(__dirname, '../Guides.txt');
 const rawTxt = fs.readFileSync(filePath, 'utf-8');
 const products = {};
 const regex = /-(^\(]+)\(([^)]+)\)/g;
