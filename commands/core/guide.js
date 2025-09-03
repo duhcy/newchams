@@ -12,6 +12,7 @@ while((match = regex.exec(rawTxt)) !== null){
   const url = match[2].trim();
   products[name] = url;
 }
+console.log(products);
 
 module.exports = {
     name: 'guide',
