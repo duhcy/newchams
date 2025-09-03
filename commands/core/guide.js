@@ -20,7 +20,7 @@ module.exports = {
                 {
                     name: 'name',
                     description: 'product name',
-                    type: ApplicationCommandOptionType.Number,
+                    type: ApplicationCommandOptionType.String,
                     required: true,
                   },
                 ],
