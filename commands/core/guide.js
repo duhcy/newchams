@@ -23,6 +23,7 @@ module.exports = {
                     description: 'product name',
                     type: ApplicationCommandOptionType.String,
                     required: true,
+                    autocomplete: true
                   },
                 ],
     
