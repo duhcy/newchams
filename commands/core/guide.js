@@ -36,7 +36,7 @@ module.exports = {
         inter.reply({content: `Link for ${name} Guide: ${url}`, ephemeral: false});
       }
       else{
-        inter.reply({content: `Product not found`, ephemeral: false});
+        inter.reply({content: `Product not found`, ephemeral: true});
       }
     },
     async autocomplete(inter){
