@@ -4,7 +4,7 @@ const reviewEmbed = new EmbedBuilder()
   .setColor(0x771BCB) // Trustpilot green
   .setTitle("Leave Us a Review ⭐")
   .setDescription("We value your feedback! Please consider leaving us a review on **[Trustpilot](https://www.trustpilot.com/review/chamscheats.com)**.")
-  .setThumbnail("https://www.vhv.rs/dpng/d/588-5885660_adding-trustpilot-image-next-to-logo-on-supply.png")
+  .setThumbnail("https://www.pngfind.com/pngs/b/241-2418037_japanese-maple-png.png")
   .setFooter({ text: "Thank you for supporting us ❤️" });
 
 module.exports = {
