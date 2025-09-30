@@ -1,4 +1,5 @@
 Apex
+-Apex Astral (https://chamscheats.com/forums/topic/534-apex-astral/#comment-535)
 -Apex External (https://chamscheats.com/forums/topic/534-apex-external/)
 -Apex Vex DMA (https://chamscheats.com/forums/topic/836-apex-vex-dma/#comment-837)
 -Apex Playground DMA (https://chamscheats.com/forums/topic/250-apex-playground-dma/)
@@ -45,6 +46,7 @@ Fortnite
 -Fortnite Blurred DMA (https://chamscheats.com/forums/topic/219-fn-blurred-dma/)
 -Fortnite Calamari External (https://chamscheats.com/forums/topic/218-fn-calamari-external/)
 -Fortnite Disconnect External (https://chamscheats.com/forums/topic/217-fn-disconnect-external/)
+-Fortnite Pulsar (https://chamscheats.com/forums/topic/883-fortnite-pulsar/#comment-884)
 
 Hell Let Loose 
 -Hell Let Loose Klar (https://chamscheats.com/forums/topic/648-hell-let-loose-klar/)
@@ -56,7 +58,8 @@ Marvel Rivals
 -Marvel Rivals DMA (https://chamscheats.com/forums/topic/192-marvel-rivals-dma/)
 -Marvel Rivals Predator (https://chamscheats.com/forums/topic/191-marvel-rivals-predator/)
 
-Pubg 
+Pubg
+-Pubg Astral (https://chamscheats.com/forums/topic/236-pubg-astral/#comment-237) 
 -Pubg Desync (https://chamscheats.com/forums/topic/241-pubg-desync/)
 -Pubg Scarlet DMA (https://chamscheats.com/forums/topic/236-pubg-scarlet-dma/)
 
@@ -85,6 +88,9 @@ Rust
 -Rust Recoil.club (https://chamscheats.com/forums/topic/196-recoilclub-rust-script/)
 -Rust Ultimate External (https://chamscheats.com/forums/topic/195-rust-ultimate-external/)
 -Rust Disconnect External (https://chamscheats.com/forums/topic/194-rust-disconnect-external/)
+
+SOT
+-SOT Astral (https://chamscheats.com/forums/topic/884-sot-astral/#comment-885)
 
 Valorant 
 -Valorant RKX DMA (https://chamscheats.com/forums/topic/837-valorant-rkx-dma/)
