@@ -35,7 +35,7 @@ module.exports = {
       const name = inter.options.getString('name');
       const url = products[name];
       if(url){
-        inter.reply({content: `Link for ${name} Guide: ${url}`, ephemeral: false});
+        inter.reply({content: `Link for [${name} Guide](${url})`, ephemeral: false});
       }
       else{
         inter.reply({content: `Product not found`, ephemeral: true});
