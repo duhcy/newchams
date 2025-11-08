@@ -40,7 +40,7 @@ module.exports = {
         {
           name: "⚠️ Important",
           value:
-            "Ensure currency is **USD**\nUse **Cash App direct payment**\n" +
+            "Ensure currency is **USD**\n" +
             `Payment for: ${keyType.charAt(0).toUpperCase() + keyType.slice(1)} Key`,
         }
       )

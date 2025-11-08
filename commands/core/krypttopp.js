@@ -32,7 +32,7 @@ module.exports = {
     const paymentEmbed = new EmbedBuilder()
       .setColor(0x771BCB)
       .setTitle("💸 Payment to kryptto")
-      .setDescription("Thanks for choosing <@1436588802876641291> as your Middleman!")
+      .setDescription("Thanks for choosing <@649676406036496431> as your Middleman!")
       .addFields(
         {
           name: "📤 Send Payment",
