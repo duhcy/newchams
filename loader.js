@@ -36,9 +36,11 @@ const discordEvents = readdirSync("./events/Discord/").filter((file) =>
 
   client.on("ready", async (client) => {
   const guild = client.guilds.cache.get(client.config.opt.GUILDID);
+  const guild2 = client.guilds.cache.get(client.config.opt.GUILDID2);
   if (!guild) return console.log("Guild not found.");
 
   await guild.commands.set(commandsArray); // Fast update for testing
+  await guild2.commands.set(commandsArray); 
   console.log("Guild slash commands registered.");
 
     //console.log(commandsArray);
