@@ -22,7 +22,7 @@ module.exports = {
     },
   ],
 
-  async execute({ inter, ephemeralStatus }) {
+  async execute({ client, inter, ephemeralStatus }) {
     const amount = inter.options.getNumber("amount");
     const keyType = inter.options.getString("keytype");
 
@@ -47,6 +47,11 @@ module.exports = {
       )
       .setFooter({ text: "Powered by ChamsCheats • Payment Section" });
 
-    await inter.reply({ embeds: [paymentEmbed], ephemeral: ephemeralStatus });
+      if((inter.user.id == client.config.app.dev) || (inter.member.roles.cache.has(client.config.opt.STAFFROLE))){
+            return inter.reply({ embeds: [paymentEmbed], ephemeral: false });
+      }
+      else{
+            return inter.reply({ content: "❌ You don't have permission to use this command.", ephemeral: true });
+      }
   },
 };
