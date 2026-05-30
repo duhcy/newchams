@@ -1,4 +1,7 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+const discord = require('discord.js');
+console.log('discord.js exports:', Object.keys(discord));
+const { Client, GatewayIntentBits } = discord;
+console.log('GatewayIntentBits:', GatewayIntentBits);
 require('dotenv').config();
 
 global.client = new Client({
