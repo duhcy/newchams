@@ -1,16 +1,13 @@
-const discord = require('discord.js');
-console.log('discord.js exports:', Object.keys(discord));
-const { Client, GatewayIntentBits } = discord;
-console.log('GatewayIntentBits:', GatewayIntentBits);
+const { Client, Intents } = require('discord.js');
 require('dotenv').config();
 
 global.client = new Client({
     intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMembers,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildVoiceStates,
-        GatewayIntentBits.MessageContent
+        Intents.FLAGS.GUILDS,
+        Intents.FLAGS.GUILD_MEMBERS,
+        Intents.FLAGS.GUILD_MESSAGES,
+        Intents.FLAGS.GUILD_VOICE_STATES,
+        Intents.FLAGS.MESSAGE_CONTENT
     ],
 });
 

@@ -3,5 +3,5 @@ module.exports = async (client) => {
     console.log("General: " + client.config.opt.Channels);
     console.log("Roles:" + client.config.opt.STAFFROLE);
     
-    //client.user.setActivity(client.config.app.playing);
+    client.user.setActivity('https://chamscheats.com/', { type: 'WATCHING' });
 }
