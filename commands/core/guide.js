@@ -49,13 +49,13 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setTitle(`${name} Guide`)
       .setDescription(
-        'Click the button below to open the guide.'
+        `Click the button below to open the guide for **${name}**.`
       )
       .setThumbnail(
         'https://cdn.discordapp.com/avatars/1377755363583201391/f61d35f7eb8e3c93af28bffe5ddd6971.webp'
       )
       .setColor(0x771BCB)
-      .setFooter({ text: 'ChamsCheats Guides' })
+      .setFooter({ text: 'ChamsCheats' })
       .setTimestamp();
 
     const row = new ActionRowBuilder().addComponents(
