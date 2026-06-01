@@ -173,24 +173,50 @@ const errors = {
     color: 9448166,
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-  'NextCheat - Menu Not Showing Up in EFT': {
-    title: 'NextCheat - Menu Not Showing Up in EFT',
-    description: 'The menu is not appearing in Escape from Tarkov.',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
-  'NextCheat - Common Injection Issues': {
-    title: 'NextCheat - Common Injection Issues',
-    description: 'Common fixes for failing to inject/crashing when injecting/general game crashes:',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
-  'NextCheat Failed to Inject': {
-    title: 'NextCheat Failed to Inject',
-    description: 'Injection failed due to one of the following issues:',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
+   'NextCheat - Menu Not Showing Up in EFT': {
+     title: 'NextCheat - Menu Not Showing Up in EFT',
+     description: 'The menu is not appearing in Escape from Tarkov.',
+     color: 13095707,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'Solution',
+         value: '**Disable Nvidia Smooth Motion**\n\n1. Right-click on your desktop and select **NVIDIA Control Panel**\n2. Navigate to **Manage 3D Settings**\n3. Find **Smooth Motion** or **Max Frame Rate**\n4. Set it to **Off** or **Disabled**\n5. Click **Apply**\n6. Restart the game and try again',
+         inline: false
+       }
+     ]
+   },
+   'NextCheat - Common Injection Issues': {
+     title: 'NextCheat - Common Injection Issues',
+     description: 'Common fixes for failing to inject/crashing when injecting/general game crashes:',
+     color: 13095707,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'General Fixes',
+         value: '• Increase injection delay\n• Clear game cache\n• Verify file integrity\n• Disable NVIDIA smooth motion\n• Disable ReShade\n• Disable any 3rd party overlays (Steam, Medal, Discord are fine usually)',
+         inline: false
+       },
+       {
+         name: 'EFT Specific',
+         value: '• **Automatic RAM cleaner must be disabled**',
+         inline: false
+       }
+     ]
+   },
+   'NextCheat Failed to Inject': {
+     title: 'NextCheat Failed to Inject',
+     description: 'Injection failed due to one of the following issues:',
+     color: 13095707,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'Possible Fixes',
+         value: '• Increase injection delay\n• Clear game cache\n• Verify file integrity\n• Double check that RAM cleaner is disabled\n• Disable NVIDIA smooth motion\n• Disable ReShade',
+         inline: false
+       }
+     ]
+   },
   'Astral Pin Error Code Fix': {
     title: 'Astral Pin Error Code Fix',
     description: 'Run these commands in PowerShell as Administrator:',
