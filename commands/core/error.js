@@ -176,7 +176,7 @@ const errors = {
    'NextCheat - Menu Not Showing Up in EFT': {
      title: 'NextCheat - Menu Not Showing Up in EFT',
      description: 'The menu is not appearing in Escape from Tarkov.',
-     color: 13095707,
+     color: 9448166,
      image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
      fields: [
        {
@@ -189,7 +189,7 @@ const errors = {
    'NextCheat - Common Injection Issues': {
      title: 'NextCheat - Common Injection Issues',
      description: 'Common fixes for failing to inject/crashing when injecting/general game crashes:',
-     color: 13095707,
+     color: 9448166,
      image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
      fields: [
        {
@@ -207,7 +207,7 @@ const errors = {
    'NextCheat Failed to Inject': {
      title: 'NextCheat Failed to Inject',
      description: 'Injection failed due to one of the following issues:',
-     color: 13095707,
+     color: 9448166,
      image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
      fields: [
        {
