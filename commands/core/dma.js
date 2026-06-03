@@ -5,8 +5,8 @@ module.exports = {
     description: "DMA Files and Drivers",
 
     async execute({ client, inter, ephemeralStatus }) {
-        const embed = new EmbedBuilder()
-            .setColor(0x771BCB) // Discord blurple
+         const embed = new EmbedBuilder()
+             .setColor(9448166)
             .setTitle('🔧 All-In-One Tool for DMA Cards')
             .setDescription('A powerful utility that helps you manage and diagnose your DMA card with ease.')
             .addFields(

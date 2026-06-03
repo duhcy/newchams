@@ -5,8 +5,8 @@ module.exports = {
     description: "RustDesk installer",
 
     async execute({ client, inter, ephemeralStatus }) {
-        const rustdeskEmbed = new EmbedBuilder()
-            .setColor(0x771BCB)
+         const rustdeskEmbed = new EmbedBuilder()
+             .setColor(9448166)
             .setTitle("📥 RustDesk Installation Instructions")
             .setDescription("Follow the steps below to install RustDesk and share your connection code.")
             .addFields(

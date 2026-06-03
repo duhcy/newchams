@@ -6,8 +6,8 @@ module.exports = {
 
     async execute({ client, inter, ephemeralStatus }) {
         if(!ephemeralStatus){
-            const embed = {
-                color: 0x771BCB,
+             const embed = {
+                 color: 9448166,
                 title: '💎 EPVP Vouch Program',
                 description: [
                     `**✅ Step 1:** Leave a trade request on one of our [Elitepvpers posts](https://www.elitepvpers.com/).`,
@@ -79,8 +79,8 @@ module.exports = {
             await client.channels.cache.get(client.config.opt.EPVPCHANNEL).messages.fetch()
                     .then(messages => messages.filter(message => message.author.id === client.user.id).first().edit({ embeds: [embed], content: "" }))
                     .catch(console.error);
-            const dmaEmbed = new EmbedBuilder()
-                      .setColor(0x771BCB)
+             const dmaEmbed = new EmbedBuilder()
+                       .setColor(9448166)
                       .setTitle('🔧 What is Direct Memory Access (DMA)?')
                       .setThumbnail('https://cdn.discordapp.com/attachments/1139006641442922557/1394148450135969954/Asset_113x.png?ex=6875c16c&is=68746fec&hm=dd43018b66fa19f27bf1332d38efe264a9f5ce34860c65202aea846619111c21&')
                       .setDescription(

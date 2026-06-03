@@ -54,7 +54,7 @@ module.exports = {
       .setThumbnail(
         'https://cdn.discordapp.com/avatars/1377755363583201391/f61d35f7eb8e3c93af28bffe5ddd6971.webp'
       )
-      .setColor(0x771BCB)
+      .setColor(9448166)
       .setFooter({ text: 'ChamsCheats' })
       .setTimestamp();
 

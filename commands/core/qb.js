@@ -5,9 +5,9 @@ module.exports = {
     description: "How to disable find your Ring1 QB",
 
     async execute({ client, inter, ephemeralStatus }) {
-        const embed = new EmbedBuilder()
-  .setTitle('📘 Ring1 QB Guide')
-  .setColor(0x771BCB)
+         const embed = new EmbedBuilder()
+   .setTitle('📘 Ring1 QB Guide')
+   .setColor(9448166)
   .setDescription('Follow these steps to locate and upload your **custom build** for Ring1 QB.')
   .addFields(
     {

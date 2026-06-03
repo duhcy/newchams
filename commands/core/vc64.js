@@ -6,7 +6,7 @@ module.exports = {
 
   async execute({ client, inter, ephemeralStatus }) {
     const vcEmbed = new EmbedBuilder()
-      .setColor(0x771BCB)
+      .setColor(9448166)
       .setTitle("📦 Dependency Installer")
       .setDescription("Ensure product compatibility by installing these essential components!")
       .addFields(

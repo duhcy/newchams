@@ -18,10 +18,10 @@ module.exports = async (client, channel) => {
         const user = await client.users.fetch(NOTIFICATION_USER_ID);
         
         // Create the embed
-        const newTicketEmbed = {
-            title: "New Ticket - PayPal/CashApp",
-            description: `A new ticket has been created: ${channel}\n\n**Channel Name:** ${channel.name}`,
-            color: parseInt("7B3FF2", 16),
+         const newTicketEmbed = {
+             title: "New Ticket - PayPal/CashApp",
+             description: `A new ticket has been created: ${channel}\n\n**Channel Name:** ${channel.name}`,
+             color: 9448166,
             footer: {
                 text: "ChamsCheats",
                 iconURL: "https://cdn.discordapp.com/avatars/1377755363583201391/f61d35f7eb8e3c93af28bffe5ddd6971.webp?size=1024"

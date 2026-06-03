@@ -5,9 +5,9 @@ module.exports = {
     description: "Instructions for an Epvp trade.",
 
     async execute({ client, inter, ephemeralStatus }) {
-        const embed = new EmbedBuilder()
-            .setTitle('EPVP Vouch Program')
-            .setColor('#771BCB')
+         const embed = new EmbedBuilder()
+             .setTitle('EPVP Vouch Program')
+             .setColor(9448166)
             .setImage('https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif')
             .setFooter({
                 text: 'ChamsCheats',

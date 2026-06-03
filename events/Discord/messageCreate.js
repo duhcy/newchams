@@ -60,10 +60,10 @@ module.exports = async (client, message) => {
      if(channel && REFUND_CATEGORY_IDS.includes(channel.parentId) && !refundEmbedSentChannels.has(message.channelId)) {
          const contentLower = message.content.toLowerCase();
          if(contentLower.includes("refund") || contentLower.includes("dispute") || contentLower.includes("chargeback")) {
-             const refundEmbed = {
-                 title: "Refund & Dispute Policy",
-                 description: "Hey — we noticed you mentioned a refund, dispute, or chargeback.\n\nPlease take a moment to review our refund policy before taking any further action, and a member of our management team has been notified to help you.\n\nRead our refund policy",
-                 color: parseInt("7B3FF2", 16),
+              const refundEmbed = {
+                  title: "Refund & Dispute Policy",
+                  description: "Hey — we noticed you mentioned a refund, dispute, or chargeback.\n\nPlease take a moment to review our refund policy before taking any further action, and a member of our management team has been notified to help you.\n\nRead our refund policy",
+                  color: 9448166,
                  footer: {
                      text: "ChamsCheats",
                      iconURL: "https://cdn.discordapp.com/avatars/1377755363583201391/f61d35f7eb8e3c93af28bffe5ddd6971.webp?size=1024"
