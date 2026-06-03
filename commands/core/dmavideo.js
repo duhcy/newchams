@@ -9,6 +9,7 @@ module.exports = {
             .setColor(9448166)
             .setTitle('🎥 DMA Tutorial Video')
             .setDescription('Watch this comprehensive tutorial for DMA setup and usage instructions.\n\nhttps://www.youtube.com/watch?v=-DxgOm_SRC4')
+            .setURL('https://www.youtube.com/watch?v=-DxgOm_SRC4')
             .setImage('https://img.youtube.com/vi/-DxgOm_SRC4/maxresdefault.jpg')
             .setFooter({ 
                 text: 'ChamsCheats',
