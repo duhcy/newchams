@@ -38,6 +38,16 @@ const REFUND_CATEGORY_IDS = [
     "1415459958195093523"
 ];
 
+// Function to remove a channel from refund storage
+function removeRefundChannel(channelId) {
+    if (refundEmbedSentChannels.has(channelId)) {
+        refundEmbedSentChannels.delete(channelId);
+        saveRefundChannels();
+        console.log(`[REFUND EMBED] Removed deleted channel ${channelId} from refund storage`);
+    }
+}
+
+// Export both the message handler and channel delete cleanup
 module.exports = async (client, message) => {
      nonc = Date.now().toString();
      if(message.content.includes("gif") && message.member.roles.cache.has(client.config.opt.GIFPERMS)) { return;}
