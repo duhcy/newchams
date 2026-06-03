@@ -161,19 +161,44 @@ const errors = {
     color: 9448166,
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-  'Spoofer Ban Fix': {
-    title: 'Spoofer Ban Fix',
-    description: 'Fix for being banned from the spoofer.',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
-  'HWID Spoofer BSOD': {
-    title: 'HWID Spoofer BSOD',
-    description: 'Blue screen when running spoofer.',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
-   'NextCheat - Menu Not Showing Up in EFT': {
+   'Spoofer Ban Fix': {
+     title: 'Spoofer Ban Fix',
+     description: 'Fix for being banned from the spoofer.',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'Registry Cleanup',
+         value: '1. Delete the `.reg` file (if you have it)\n2. Run `regedit` as Administrator\n3. Navigate to: `HKEY_LOCAL_MACHINE\\SOFTWARE\\sick\\Settings`\n4. Right-click on **sick** → Delete (confirm)',
+         inline: false
+       },
+       {
+         name: 'IP Whitelisting',
+         value: '1. Visit https://whatismyipaddress.com/\n2. Copy your IP address\n3. Send it here for whitelisting',
+         inline: false
+       }
+     ]
+   },
+   'HWID Spoofer BSOD': {
+     title: 'HWID Spoofer BSOD',
+     description: 'Blue screen when running spoofer.',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
+   },
+   'Failed to load cheat Rust Pulsar': {
+     title: 'Failed to load cheat Rust Pulsar',
+     description: 'Unable to load the Rust Pulsar cheat.',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'Log File',
+         value: 'Please send this file for debugging:\n`C:/programdata/squad/log.txt`',
+         inline: false
+       }
+     ]
+   },
+    'NextCheat - Menu Not Showing Up in EFT': {
      title: 'NextCheat - Menu Not Showing Up in EFT',
      description: 'The menu is not appearing in Escape from Tarkov.',
      color: 9448166,
