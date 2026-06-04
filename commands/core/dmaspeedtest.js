@@ -16,8 +16,8 @@ module.exports = {
                     inline: false
                 },
                 {
-                    name: '🔗 Repository',
-                    value: '[View on GitHub](https://github.com/lone-dma/Lone-DMA-Test)',
+                    name: '🔗 Download',
+                    value: '[Download Latest Release](https://github.com/lone-dma/Lone-DMA-Test/releases/download/v3.4.9/github.lonedma.dmatest-win-Portable.zip)',
                     inline: false
                 }
             )
@@ -29,9 +29,9 @@ module.exports = {
 
         const row = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
-                .setLabel('View Repository')
+                .setLabel('Download')
                 .setStyle(ButtonStyle.Link)
-                .setURL('https://github.com/lone-dma/Lone-DMA-Test')
+                .setURL('https://github.com/lone-dma/Lone-DMA-Test/releases/download/v3.4.9/github.lonedma.dmatest-win-Portable.zip')
                 .setEmoji('⚡')
         );
 
