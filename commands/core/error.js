@@ -76,20 +76,19 @@ const errors = {
     ],
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-   'Vega BSOD Fix': {
-     title: 'Vega BSOD Fix',
-     description: 'Security features that need to be disabled:',
-     color: 9448166,
-     fields: [
-       {
-         name: 'Required Changes',
-         value: '**Secure Boot** - Disable in BIOS\n**Virtualization based Security (VBS)**\n**RAID** - Disable to avoid any issues if enabled',
-         inline: false
-       }
-     ],
-     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
-     thumbnail: 'msinfo.png'
-   },
+    'Vega BSOD Fix': {
+      title: 'Vega BSOD Fix',
+      description: 'Security features that need to be disabled:',
+      color: 9448166,
+      fields: [
+        {
+          name: 'Required Changes',
+          value: '**Secure Boot** - Disable in BIOS\n**Virtualization based Security (VBS)**\n**RAID** - Disable to avoid any issues if enabled',
+          inline: false
+        }
+      ],
+      image: 'https://cdn.discordapp.com/attachments/1139006641442922557/1512179657397764217/image.png?ex=6a23268d&is=6a21d50d&hm=379361006121f64dc3694d42cd52aa0054e117016805bdc945cea511052d320b&animated=true'
+    },
   'Vega - Loader Keeps Wanting to Restart PC': {
     title: 'Vega - Loader Keeps Wanting to Restart PC',
     description: 'Usual problems that causes this:',
@@ -314,17 +313,8 @@ module.exports = {
       embed.addFields(errorData.fields);
     }
 
-    const embeds = [embed];
-    
-    if (errorData.thumbnail) {
-      const imageEmbed = new EmbedBuilder()
-        .setImage(errorData.thumbnail)
-        .setColor(errorData.color);
-      embeds.push(imageEmbed);
-    }
-
     await inter.reply({
-      embeds: embeds,
+      embeds: [embed],
       ephemeral: ephemeralStatus
     });
   },
