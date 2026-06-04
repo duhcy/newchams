@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: '⚙️ Step 3: Find the Build File',
-      value: 'Inside that folder, locate the file named:\n`scimitar-engine-win64-2022-flto-dxXX.exe`\nMake sure it matches the **DirectX version** you use in-game!',
+       value: 'Inside that folder, locate the file named:\n`RainbowSix.exe`\nMake sure it matches the **DirectX version** you use in-game!',
     },
     {
       name: '📤 Step 4: Upload the File',

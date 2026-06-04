@@ -76,19 +76,20 @@ const errors = {
     ],
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-  'Vega BSOD Fix': {
-    title: 'Vega BSOD Fix',
-    description: 'Security features that need to be disabled:',
-    color: 9448166,
-    fields: [
-      {
-        name: 'Required Changes',
-        value: '**Secure Boot** - Disable in BIOS\n**Virtualization based Security (VBS)**\n**RAID** - Disable to avoid any issues if enabled',
-        inline: false
-      }
-    ],
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
+   'Vega BSOD Fix': {
+     title: 'Vega BSOD Fix',
+     description: 'Security features that need to be disabled:',
+     color: 9448166,
+     fields: [
+       {
+         name: 'Required Changes',
+         value: '**Secure Boot** - Disable in BIOS\n**Virtualization based Security (VBS)**\n**RAID** - Disable to avoid any issues if enabled',
+         inline: false
+       }
+     ],
+     image: 'msinfo.png',
+     thumbnail: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
+   },
   'Vega - Loader Keeps Wanting to Restart PC': {
     title: 'Vega - Loader Keeps Wanting to Restart PC',
     description: 'Usual problems that causes this:',
@@ -242,12 +243,24 @@ const errors = {
        }
      ]
    },
-  'Astral Pin Error Code Fix': {
-    title: 'Astral Pin Error Code Fix',
-    description: 'Run these commands in PowerShell as Administrator:',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
+   'Astral Pin Error Code Fix': {
+     title: 'Astral Pin Error Code Fix',
+     description: 'Run these commands in PowerShell as Administrator:',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'PowerShell Commands',
+         value: '```\ntakeown /F "C:\\Windows\\System32\\hvix64.exe"\nicacls "C:\\Windows\\System32\\hvix64.exe" /grant *$(([System.Security.Principal.WindowsIdentity]::GetCurrent()).User.Value):F\ntakeown /F "C:\\Windows\\System32\\hvax64.exe"\nicacls "C:\\Windows\\System32\\hvax64.exe" /grant *$(([System.Security.Principal.WindowsIdentity]::GetCurrent()).User.Value):F\ndel "C:\\Windows\\System32\\hvix64.exe"\ndel "C:\\Windows\\System32\\hvax64.exe"\n```',
+         inline: false
+       },
+       {
+         name: 'Additional Steps',
+         value: 'If you receive an error about PIN in Windows sign-in options:\n\n1. Manually disable PIN and password in Windows sign-in options\n2. Manually disable Hyper-V\n3. Run the commands above again',
+         inline: false
+       }
+     ]
+   },
   'Astral - Hyper-V Error Even Though It Shows Off': {
     title: 'Astral - Hyper-V Error Even Though It Shows Off',
     description: 'VBS is still enabled. Follow these steps to fully disable it.',
@@ -288,6 +301,10 @@ module.exports = {
 
     if (errorData.image) {
       embed.setImage(errorData.image);
+    }
+
+    if (errorData.thumbnail) {
+      embed.setThumbnail(errorData.thumbnail);
     }
 
     if (errorData.fields) {
