@@ -125,12 +125,29 @@ const errors = {
     ],
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-  'EAC Forbidden Tool Error': {
-    title: 'EAC Forbidden Tool Error',
-    description: 'EAC blocks Acronis drivers (caacormem.sys). Choose one of the following options:',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
+   'EAC Forbidden Tool Error': {
+     title: 'EAC Forbidden Tool Error',
+     description: 'EAC blocks Acronis drivers (caacormem.sys). Choose one of the following options:',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'Option A: Temporarily Stop Acronis Service',
+         value: '1. Run `services.msc`\n2. Stop anything named "Acronis Active Protection" or "Cyber Protect"',
+         inline: false
+       },
+       {
+         name: 'Option B: Disable Driver Manually',
+         value: '1. Run CMD as Administrator\n2. Execute these commands:\n```\nsc stop caacormem\nsc config caacormem start= disabled\n```\n3. Restart PC',
+         inline: false
+       },
+       {
+         name: 'Option C: Uninstall Acronis',
+         value: '1. Uninstall Acronis or related backup utilities if unused\n2. Reboot after uninstallation',
+         inline: false
+       }
+     ]
+   },
   'Failed to get FNameXorKey': {
     title: 'Failed to get FNameXorKey',
     description: 'This error occurs when Core Isolation/HVCI is disabled. You need to enable it.',
@@ -149,18 +166,72 @@ const errors = {
     ],
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-  'Driver Installation Error 1': {
-    title: 'Driver Installation Error 1',
-    description: 'Follow these steps to resolve driver installation issues:',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
-  'Script Edge Error': {
-    title: 'Script Edge Error',
-    description: 'Put this script in a `.bat` file and run it as Administrator.',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  },
+   'Driver Installation Error 1': {
+     title: 'Driver Installation Error 1',
+     description: 'Follow these steps to resolve driver installation issues:',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: '1. Uninstall Antivirus Software',
+         value: 'Check that all antivirus software is uninstalled in Control Panel > Uninstall a Program',
+         inline: false
+       },
+       {
+         name: '2. Update Windows & Drivers',
+         value: 'Check for Windows & driver updates (often done in NVIDIA app)',
+         inline: false
+       },
+       {
+         name: '3. Disable Core Isolation',
+         value: 'Turn off all Core Isolation settings (Press Windows Key > Type "Core Isolation")',
+         inline: false
+       },
+       {
+         name: '4. Restart PC',
+         value: 'Restart PC and inject again',
+         inline: false
+       },
+       {
+         name: '5. Remove Faceit/Vanguard',
+         value: 'Uninstall Faceit anti-cheat and Riot Vanguard using "Add or Remove Programs"',
+         inline: false
+       },
+       {
+         name: '6. Disable Windows Defender',
+         value: 'Disable all antivirus software and Windows Defender (Real-Time Protection)',
+         inline: false
+       },
+       {
+         name: '7. Disable Kernel Isolation',
+         value: 'Disable kernel isolation and vulnerable driver blocking in Windows Defender',
+         inline: false
+       },
+       {
+         name: '8. Disable Reputation-Based Protection',
+         value: 'Search for it in Windows and disable all options',
+         inline: false
+       },
+       {
+         name: '9. Switch Screen Mode',
+         value: 'Switch in-game screen mode to "Borderless/Windowed"',
+         inline: false
+       }
+     ]
+   },
+   'Script Edge Error': {
+     title: 'Script Edge Error',
+     description: 'Put this script in a `.bat` file and run it as Administrator.',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'BAT Script',
+         value: '```bat\n@echo off\n\necho Detecting Windows temp path...\n\nset TARGET=%TEMP%\n\necho Temp path is: %TARGET%\n\nfor %%I in (\"%TARGET%\") do set USERPATH=%%~dpI\n\necho Detected profile directory:\necho %USERPATH%\n\necho Taking ownership...\ntakeown /F \"%USERPATH%\" /R /D Y >nul 2>&1\n\necho Granting permissions...\nicacls \"%USERPATH%\" /grant %USERNAME%:(OI)(CI)F /T >nul 2>&1\n\necho.\necho Permissions repaired.\necho Restart your PC\npause\n```',
+         inline: false
+       }
+     ]
+   },
    'Spoofer Ban Fix': {
      title: 'Spoofer Ban Fix',
      description: 'Fix for being banned from the spoofer.',
@@ -267,12 +338,39 @@ const errors = {
        }
      ]
    },
-  'Astral - Hyper-V Error Even Though It Shows Off': {
-    title: 'Astral - Hyper-V Error Even Though It Shows Off',
-    description: 'VBS is still enabled. Follow these steps to fully disable it.',
-    color: 9448166,
-    image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
-  }
+   'Astral - Hyper-V Error Even Though It Shows Off': {
+     title: 'Astral - Hyper-V Error Even Though It Shows Off',
+     description: 'VBS is still enabled. Follow these steps to fully disable it.',
+     color: 9448166,
+     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+     fields: [
+       {
+         name: 'Step 1: Disable Memory Integrity',
+         value: 'Search for **Core Isolation** in Windows settings and turn off **Memory Integrity**. Restart.',
+         inline: false
+       },
+       {
+         name: 'Step 2: Registry - EnableVirtualizationBasedSecurity',
+         value: '1. Run `regedit` as Admin\n2. Navigate to: `HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\DeviceGuard`\n3. Set **EnableVirtualizationBasedSecurity** value to **0**',
+         inline: false
+       },
+       {
+         name: 'Step 3: Registry - HypervisorEnforcedCodeIntegrity',
+         value: 'Navigate to: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\HypervisorEnforcedCodeIntegrity`\n\nSet **Enabled** value to **0**',
+         inline: false
+       },
+       {
+         name: 'Step 4: Registry - WindowsHello',
+         value: 'Navigate to: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\WindowsHello`\n\nSet **Enabled** value to **0**',
+         inline: false
+       },
+       {
+         name: 'Step 5: Restart & Verify',
+         value: 'Restart your PC. Open **System Information** and verify **Virtualization-based security** says **not enabled**.',
+         inline: false
+       }
+     ]
+   }
 };
 
 module.exports = {
