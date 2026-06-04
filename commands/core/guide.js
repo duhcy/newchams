@@ -47,15 +47,25 @@ module.exports = {
     }
 
     const embed = new EmbedBuilder()
-      .setTitle(`${name} Guide`)
+      .setTitle(`📖 ${name} Guide`)
       .setDescription(
-        `Click the button below to open the guide for **${name}**.`
+        `Access the comprehensive guide for **${name}**. Click the button below to get started!`
+      )
+      .addFields(
+        {
+          name: '🔗 Access Guide',
+          value: `Click the button below to open the full guide in your browser.`,
+          inline: false
+        }
       )
       .setThumbnail(
         'https://cdn.discordapp.com/avatars/1377755363583201391/f61d35f7eb8e3c93af28bffe5ddd6971.webp'
       )
       .setColor(9448166)
-      .setFooter({ text: 'ChamsCheats' })
+      .setFooter({ 
+        text: 'ChamsCheats',
+        iconURL: 'https://cdn.discordapp.com/avatars/1377755363583201391/f61d35f7eb8e3c93af28bffe5ddd6971.webp?size=1024'
+      })
       .setTimestamp();
 
     const row = new ActionRowBuilder().addComponents(
