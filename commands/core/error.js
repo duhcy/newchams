@@ -125,29 +125,34 @@ const errors = {
     ],
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-   'EAC Forbidden Tool Error': {
-     title: 'EAC Forbidden Tool Error',
-     description: 'EAC blocks Acronis drivers (caacormem.sys). Choose one of the following options:',
-     color: 9448166,
-     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
-     fields: [
-       {
-         name: 'Option A: Temporarily Stop Acronis Service',
-         value: '1. Run `services.msc`\n2. Stop anything named "Acronis Active Protection" or "Cyber Protect"',
-         inline: false
-       },
-       {
-         name: 'Option B: Disable Driver Manually',
-         value: '1. Run CMD as Administrator\n2. Execute these commands:\n```\nsc stop caacormem\nsc config caacormem start= disabled\n```\n3. Restart PC',
-         inline: false
-       },
-       {
-         name: 'Option C: Uninstall Acronis',
-         value: '1. Uninstall Acronis or related backup utilities if unused\n2. Reboot after uninstallation',
-         inline: false
-       }
-     ]
-   },
+    'EAC Forbidden Tool': {
+      title: 'EAC Forbidden Tool',
+      description: 'Follow these comprehensive fixes:',
+      color: 9448166,
+      image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+      fields: [
+        {
+          name: 'First Fix',
+          value: '1. Update Windows\n2. Update Nvidia / AMD Graphical Drivers\n3. Restart Computer\n4. Delete All Current Loaders & Install A New One\n5. Run the New Loader as Administrator',
+          inline: false
+        },
+        {
+          name: 'Second Fix',
+          value: '1. Restart Computer\n2. Delete All Current Loaders\n3. Restart Again\n4. Launch Rust Without Injecting\n5. Connect to desired Server\n6. Play for Approx. 10 Minutes\n7. Disconnect from the Server and Close Rust\n8. Restart Once Again\n9. Install a New Loader Running It as Administrator\n10. Injecting\n11. Reconnected to Desired Server',
+          inline: false
+        },
+        {
+          name: 'Also Check',
+          value: 'If Nvidia, SteelSeries, or Overwolf are being run as admin:\n• Through user Input when Launching\n• In the Compatibility tab of each Software',
+          inline: false
+        },
+        {
+          name: 'If Nothing Works',
+          value: 'Keep Restarting Their Computer and Injecting with a new Loader',
+          inline: false
+        }
+      ]
+    },
   'Failed to get FNameXorKey': {
     title: 'Failed to get FNameXorKey',
     description: 'This error occurs when Core Isolation/HVCI is disabled. You need to enable it.',
