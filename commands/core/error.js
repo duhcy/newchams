@@ -76,19 +76,19 @@ const errors = {
     ],
     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif'
   },
-    'Vega BSOD Fix': {
-      title: 'Vega BSOD Fix',
-      description: 'Security features that need to be disabled:',
-      color: 9448166,
-      fields: [
-        {
-          name: 'Required Changes',
-          value: '**Secure Boot** - Disable in BIOS\n**Virtualization based Security (VBS)**\n**RAID** - Disable to avoid any issues if enabled',
-          inline: false
-        }
-      ],
-      image: 'https://cdn.discordapp.com/attachments/1139006641442922557/1512179657397764217/image.png?ex=6a23268d&is=6a21d50d&hm=379361006121f64dc3694d42cd52aa0054e117016805bdc945cea511052d320b&animated=true'
-    },
+   'Vega BSOD Fix': {
+       title: 'Vega BSOD Fix',
+       description: 'Security features that need to be disabled:',
+       color: 9448166,
+       fields: [
+         {
+           name: 'Required Changes',
+           value: '**Secure Boot** - Disable in BIOS\n**Virtualization based Security (VBS)**\n**RAID** - Disable to avoid any issues if enabled',
+           inline: false
+         }
+       ],
+       image: 'https://cdn.discordapp.com/attachments/1139006641442922557/1512179657397764217/image.png?ex=6a23268d&is=6a21d50d&hm=379361006121f64dc3694d42cd52aa0054e117016805bdc945cea511052d320b&animated=true'
+     },
   'Vega - Loader Keeps Wanting to Restart PC': {
     title: 'Vega - Loader Keeps Wanting to Restart PC',
     description: 'Usual problems that causes this:',
@@ -338,39 +338,90 @@ const errors = {
        }
      ]
    },
-   'Astral - Hyper-V Error Even Though It Shows Off': {
-     title: 'Astral - Hyper-V Error Even Though It Shows Off',
-     description: 'VBS is still enabled. Follow these steps to fully disable it.',
-     color: 9448166,
-     image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
-     fields: [
-       {
-         name: 'Step 1: Disable Memory Integrity',
-         value: 'Search for **Core Isolation** in Windows settings and turn off **Memory Integrity**. Restart.',
-         inline: false
-       },
-       {
-         name: 'Step 2: Registry - EnableVirtualizationBasedSecurity',
-         value: '1. Run `regedit` as Admin\n2. Navigate to: `HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\DeviceGuard`\n3. Set **EnableVirtualizationBasedSecurity** value to **0**',
-         inline: false
-       },
-       {
-         name: 'Step 3: Registry - HypervisorEnforcedCodeIntegrity',
-         value: 'Navigate to: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\HypervisorEnforcedCodeIntegrity`\n\nSet **Enabled** value to **0**',
-         inline: false
-       },
-       {
-         name: 'Step 4: Registry - WindowsHello',
-         value: 'Navigate to: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\WindowsHello`\n\nSet **Enabled** value to **0**',
-         inline: false
-       },
-       {
-         name: 'Step 5: Restart & Verify',
-         value: 'Restart your PC. Open **System Information** and verify **Virtualization-based security** says **not enabled**.',
-         inline: false
-       }
-     ]
-   }
+    'Astral - Hyper-V Error Even Though It Shows Off': {
+      title: 'Astral - Hyper-V Error Even Though It Shows Off',
+      description: 'VBS is still enabled. Follow these steps to fully disable it.',
+      color: 9448166,
+      image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+      fields: [
+        {
+          name: 'Step 1: Disable Memory Integrity',
+          value: 'Search for **Core Isolation** in Windows settings and turn off **Memory Integrity**. Restart.',
+          inline: false
+        },
+        {
+          name: 'Step 2: Registry - EnableVirtualizationBasedSecurity',
+          value: '1. Run `regedit` as Admin\n2. Navigate to: `HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\DeviceGuard`\n3. Set **EnableVirtualizationBasedSecurity** value to **0**',
+          inline: false
+        },
+        {
+          name: 'Step 3: Registry - HypervisorEnforcedCodeIntegrity',
+          value: 'Navigate to: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\HypervisorEnforcedCodeIntegrity`\n\nSet **Enabled** value to **0**',
+          inline: false
+        },
+        {
+          name: 'Step 4: Registry - WindowsHello',
+          value: 'Navigate to: `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\WindowsHello`\n\nSet **Enabled** value to **0**',
+          inline: false
+        },
+        {
+          name: 'Step 5: Restart & Verify',
+          value: 'Restart your PC. Open **System Information** and verify **Virtualization-based security** says **not enabled**.',
+          inline: false
+        }
+      ]
+    },
+    'Ultimate EAC Forbidden': {
+      title: 'Ultimate EAC Forbidden Tool',
+      description: 'EAC Forbidden Tool Error - Follow these comprehensive fixes:',
+      color: 9448166,
+      image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+      fields: [
+        {
+          name: 'First Fix',
+          value: '1. Update Windows\n2. Update Nvidia / AMD Graphical Drivers\n3. Restart Computer\n4. Delete All Current Loaders & Install A New One\n5. Run the New Loader as Administrator',
+          inline: false
+        },
+        {
+          name: 'Second Fix',
+          value: '1. Restart Computer\n2. Delete All Current Loaders\n3. Restart Again\n4. Launch Rust Without Injecting\n5. Connect to desired Server\n6. Play for Approx. 10 Minutes\n7. Disconnect from the Server and Close Rust\n8. Restart Once Again\n9. Install a New Loader Running It as Administrator\n10. Injecting\n11. Reconnected to Desired Server',
+          inline: false
+        },
+        {
+          name: 'Also Check',
+          value: 'If Nvidia, SteelSeries, or Overwolf are being run as admin:\n• Through user Input when Launching\n• In the Compatibility tab of each Software',
+          inline: false
+        },
+        {
+          name: 'If Nothing Works',
+          value: 'Keep Restarting Their Computer and Injecting with a new Loader',
+          inline: false
+        }
+      ]
+    },
+    'Astral Memory Map': {
+      title: 'Astral Memory Map',
+      description: 'Error: Failed to allocate memory/to map memory(x) - Please reboot pc and try again.',
+      color: 9448166,
+      image: 'https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif',
+      fields: [
+        {
+          name: 'Solution',
+          value: 'The driver was installed incorrectly, you need to restart your PC and try again.\n\n**Note:** If you are in an internet cafe and the error repeats, you need to try another PC.',
+          inline: false
+        },
+        {
+          name: 'Clean Startup Programs',
+          value: 'If restarting didn\'t help, clean the startup programs.',
+          inline: false
+        },
+        {
+          name: 'Use Autoruns (Recommended)',
+          value: 'If the error still persists, download **Autoruns** and disable all programs that are in startup but do not belong to system ones.\n\n**Important:** There are cases when drivers of deleted programs remain in the system.\n\nDownload: https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns',
+          inline: false
+        }
+      ]
+    }
 };
 
 module.exports = {
