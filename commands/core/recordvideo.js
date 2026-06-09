@@ -11,33 +11,33 @@ module.exports = {
       .setColor(9448166)
       .addFields(
         {
-          name: '1️⃣ Download OBS',
+          name: 'Download OBS',
           value: '[Click here to download OBS](https://obsproject.com/download)',
           inline: false
         },
         {
-          name: '2️⃣ Installation',
-          value: '• Visit the download link above\n• Click **Download Installer**\n• Run the installer and follow the setup wizard\n• Launch OBS when installation is complete',
+          name: 'Installation',
+          value: '1. Visit the download link above\n2. Click **Download Installer**\n3. Run the installer and follow the setup wizard\n4. Launch OBS when installation is complete',
           inline: false
         },
         {
-          name: '3️⃣ Set Up Recording',
-          value: '• Open OBS\n• In the **Sources** section, click **+** and add **Screen Capture** (or **Window Capture**)\n• Select your monitor or specific window to record\n• Click **Start Recording** button in the bottom-right corner',
+          name: 'Set Up Recording',
+          value: '1. Open OBS\n2. In the **Sources** section, click **+** and add **Screen Capture** (or **Window Capture**)\n3. Select your monitor or specific window to record\n4. Click **Start Recording** button in the bottom-right corner',
           inline: false
         },
         {
-          name: '4️⃣ Record Your Screen',
-          value: '• Perform the actions you want to record\n• Keep OBS window visible (or minimized)\n• When done, click **Stop Recording** in OBS\n• OBS saves the video automatically to your computer',
+          name: 'Record Your Screen',
+          value: '1. Perform the actions you want to record\n2. Keep OBS window visible (or minimized)\n3. When done, click **Stop Recording** in OBS\n4. OBS saves the video automatically to your computer',
           inline: false
         },
         {
-          name: '5️⃣ Upload to Streamable',
-          value: '• Go to **https://streamable.com/**\n• Click **Upload** or drag your video file onto the page\n• Wait for upload and processing to complete\n• Copy the link and paste it in your support ticket',
+          name: 'Upload to Streamable',
+          value: '1. Go to **https://streamable.com/**\n2. Click **Upload** or drag your video file onto the page\n3. Wait for upload and processing to complete\n4. Copy the link and paste it in your support ticket',
           inline: false
         },
         {
-          name: '💡 Tips',
-          value: '• Default video location: `C:\\Users\\[YourName]\\Videos\\` (Windows) or `~/Movies/` (Mac)\n• Keep recordings under **250 MB** for instant Streamable uploads\n• Streamable links expire after **90 days** of no views',
+          name: 'Tips',
+          value: 'Default video location: `C:\\Users\\[YourName]\\Videos\\` (Windows) or `~/Movies/` (Mac)\nKeep recordings under **250 MB** for instant Streamable uploads\nStreamable links expire after **90 days** of no views',
           inline: false
         }
       )
