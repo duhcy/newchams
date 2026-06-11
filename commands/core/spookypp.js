@@ -25,6 +25,8 @@ module.exports = {
   async execute({ client, inter, ephemeralStatus }) {
     const amount = inter.options.getNumber("amount");
     const keyType = inter.options.getString("keytype");
+    
+    const keyTypeDisplay = keyType === "day" ? "Day Key" : "Week/Month Key";
 
     const feePercent = keyType === "day" ? 0.09 : 0.05;
     const total = (amount * (1 + feePercent)).toFixed(2);
@@ -42,7 +44,7 @@ module.exports = {
           name: "⚠️ Important",
           value:
             "Use **Friends & Family**\nEnsure currency is **USD**\n" +
-            `Payment for: ${keyType.charAt(0).toUpperCase() + keyType.slice(1)} Key`,
+            `Payment for: ${keyTypeDisplay}`,
         }
       )
       .setFooter({ 
