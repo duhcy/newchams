@@ -36,7 +36,7 @@ module.exports = {
       .addFields(
         {
           name: "📤 Send Payment",
-          value: `Send **${total} USD** to [Spooky's PayPal](https://www.paypal.me/janaejohnson11)`,
+          value: `Send **${total} USD** to [Spooky's PayPal](https://www.paypal.com/paypalme/qweenendy)`,
         },
         {
           name: "⚠️ Important",
