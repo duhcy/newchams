@@ -65,7 +65,7 @@ module.exports = async (client, message) => {
                    description: "Hey — we noticed you mentioned a refund, dispute, or chargeback.\n\nPlease take a moment to review our refund policy before taking any further action, and a member of our management team has been notified to help you.\n\n[Read our refund policy](https://chamscheats.com/legal/refund-policy/)",
                   color: 9448166,
                  footer: {
-                     text: "ChamsCheats",
+                     text: "ChamsBot",
                      iconURL: "https://cdn.discordapp.com/avatars/1377755363583201391/f61d35f7eb8e3c93af28bffe5ddd6971.webp?size=1024"
                  },
                  image: {
