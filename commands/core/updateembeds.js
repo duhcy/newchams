@@ -57,11 +57,6 @@ module.exports = {
                          inline: true
                      },
                      {
-                         name: "Counter-Strike 2",
-                         value: "**[CS2 DMA](https://www.elitepvpers.com/forum/counter-strike-trading/5362699-cs2-dma-shareable-radar-clean-visuals-lineup-helper.html#post40601980)**",
-                         inline: true
-                     },
-                     {
                          name: "Fortnite",
                          value: "**[FN Disconnect External](https://www.elitepvpers.com/forum/fortnite-trading/5277984-fn-disconnect-external-full-streamproof-tournament-bypass-triggerbot-aimbot.html#post40187199)**",
                          inline: true
@@ -73,7 +68,7 @@ module.exports = {
                      },
                      {
                          name: "Other Games",
-                         value: "**[PUBG Desync](https://www.elitepvpers.com/forum/playerunknowns-battlegrounds-trading/5285375-pubg-desync-never-detected-built-spoofer-fully-streamproof.html)**\n**[DayZ Next Cheat Pro](https://www.elitepvpers.com/forum/dayz-trading/5295272-dayz-next-cheat-pro-aimbot-esp-misc-anti-cheat-emulator.html#post40259621)**\n**[RKX Valorant DMA](https://www.elitepvpers.com/forum/valorant-trading/5273111-rkx-valorant-dma-perfect-vischeck-lineup-helper-no-memory-shellcode.html#post40167036)**\n**[Novex Perm Spoofer](https://www.elitepvpers.com/forum/valorant-trading/5308509-novex-perm-spoofer-tpm-supported-arp-mac-address-supports-all-motherboards.html)**",
+                         value: "**[PUBG Desync](https://www.elitepvpers.com/forum/playerunknowns-battlegrounds-trading/5285375-pubg-desync-never-detected-built-spoofer-fully-streamproof.html)**\n**[DayZ Next Cheat Pro](https://www.elitepvpers.com/forum/dayz-trading/5295272-dayz-next-cheat-pro-aimbot-esp-misc-anti-cheat-emulator.html#post40259621)**\n**[RKX Valorant DMA](https://www.elitepvpers.com/forum/valorant-trading/5273111-rkx-valorant-dma-perfect-vischeck-lineup-helper-no-memory-shellcode.html#post40167036)**\n**[Novex Perm Spoofer](https://www.elitepvpers.com/forum/valorant-trading/5308509-novex-perm-spoofer-tpm-supported-arp-mac-address-supports-all-motherboards.html)**\n**[CS2 DMA](https://www.elitepvpers.com/forum/counter-strike-trading/5362699-cs2-dma-shareable-radar-clean-visuals-lineup-helper.html#post40601980)**",
                          inline: true
                      }
                  );
