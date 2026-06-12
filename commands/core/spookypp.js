@@ -53,11 +53,11 @@ module.exports = {
       })
       .setImage('https://cdn.tickety.top/images/1415459957012299918/autoresponders/dt76c837a9850/embed/image-1.gif');
 
-      if((inter.user.id == client.config.app.dev) || (inter.member.roles.cache.has(client.config.opt.STAFFROLE))){
-            return inter.reply({ embeds: [paymentEmbed], ephemeral: false });
-      }
-      else{
-            return inter.reply({ content: "❌ You don't have permission to use this command.", ephemeral: true });
-      }
+       if((inter.user.id == client.config.app.dev) || (inter.member.roles.cache.has(client.config.opt.STAFFROLE))){
+             return inter.reply({ embeds: [paymentEmbed], ephemeral: false });
+       }
+       else{
+             return inter.reply({ content: "❌ You don't have permission to use this command.", ephemeral: true });
+       }
   },
 };

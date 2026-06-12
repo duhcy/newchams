@@ -4,7 +4,7 @@ require('dotenv').config();
 global.client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMembers,
+        // GatewayIntentBits.GuildMembers, // TODO: Re-enable after bot verification
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.GuildVoiceStates,
         GatewayIntentBits.MessageContent,

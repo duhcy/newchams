@@ -10,11 +10,11 @@ module.exports = async (client, inter) => {
             return inter.reply({content: "No DMs please", ephemeral: true});
         }
         console.log(`${inter.user.username} user /${inter.commandName}`);
-        let ephemeralStatus = true;
-        if(inter.member.roles.cache.has(Staff) || inter.member.user.id == client.config.app.dev){
-            ephemeralStatus = false;
-        }
-        command.execute({ inter, client, ephemeralStatus });
+         let ephemeralStatus = true;
+         if(inter.member.roles.cache.has(Staff) || inter.member.user.id == client.config.app.dev){
+             ephemeralStatus = false;
+         }
+         command.execute({ inter, client, ephemeralStatus });
     }
     if(inter.type === InteractionType.ApplicationCommandAutocomplete) {
         const command = client.commands.get(inter.commandName);
